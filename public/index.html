@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Minesweeper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>3D Minesweeper</h1>
+    <p id="instructions">Click to reveal a tile, switch to flag mode to mark mines.</p>
+    <div id="gameContainer"></div>
+    <div id="controlBar">
+        <button id="modeToggle">Switch to Flag Mode</button>
+        <button id="resetGame">Reset Game</button>
+        <p id="flagsLeft">Flags Left: 10</p>
+        <p id="timer">Time: 0:00</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

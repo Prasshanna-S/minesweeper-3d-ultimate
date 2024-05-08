@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+}
+
+#instructions {
+    font-size: 16px;
+    color: #555;
+}
+
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    margin-left: 20px;
+    text-align: left;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    display: block;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#flagsLeft, #timer {
+    font-size: 16px;
+    color: #333;
+    margin-top: 20px;
+}
+
+#gameContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+button#modeToggle {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#modeToggle:hover {
+    background-color: #218838;
+}
+
+button#resetGame {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#resetGame:hover {
+    background-color: #c82333;
+}
+
+
+@media (max-width: 768px) {
+    #gameContainer {
+        width: 95vw;
+        height: 95vh;
+    }
+}
